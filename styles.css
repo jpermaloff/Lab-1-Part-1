@@ -2,6 +2,7 @@
     font-family: 'open sans';
     background-color: #f9fafc
 }
+
 header {
     display: inline;
 }
@@ -82,4 +83,59 @@ h3 {
     position: absolute;
     top: 23%;
     right: 0%;
+}
+.mobileNav {
+    display: none;
+}
+.hireUs {
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+    * {
+        font-family: 'open sans';
+        background-color: #f9fafc
+    }
+    .hireUs {
+        display: block;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .boldtext {
+        font-weight: bold;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .headleft {
+        display: none;
+    }
+    
+    p {
+      padding-left: 20px;
+      border-left: solid 5px #69696a;
+      font-size: 20px;
+    }
+    .scroll {
+        display: inline-block;
+        width: 100%;
+        position: static;
+        height: 5%;
+    }
+    h3 {
+        background-color: #000;
+        color: #f9fafc;
+        border: none;
+        text-align: center;
+        border: solid 5px #000;
+        border-radius: 40px;
+    }
+    .rightcolumn {
+        display: none;
+    }
+    
 }
